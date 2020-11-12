@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> My School </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body >
+	<div class="d">
+		
+		<div style="float: left;width: 20%">
+			<img src="school.jpg" height="100" width="150">
+		</div>
+
+		<div style="float: center; width: 80%">
+			<h2>Govenment Laboratory High School</h2>
+
+      <div id="dc" class="clock"></div>
+      <script type="text/javascript">
+        function showTime(){
+          var date = new Date();
+          var h = date.getHours();
+          var m = date.getMinutes();
+          var s = date.getSeconds();
+          var session = "AM";
+          if(h == 0){
+            h = 12;
+          }
+          if(h > 12){
+           h = h-12;
+          }
+          if(h < 10){
+          h = "0" + h;
+            session = "PM";
+          }
+          if(m < 10){
+          m = "0" + m;
+          }
+          if(s < 10){
+          s = "0" + s;}
+          var time = h + " :" + m + ":" +s + " " + session;
+          document.getElementById("dc").innerText = time;
+          document.getElementById("dc").textContent = time;
+        }
+            showTime();
+              setInterval(showTime,1000); 
+      </script>
+		</div>
+
+	</div>
+
+<ul >
+  <li> <a>Home</a></li>
+	<li> <a>About School</a>
+    		<ul >
+    			<li><a href="file://C:/xampp/htdocs/School%20managment/history.html" target="_blank">History</a></li>
+    			<li><a href="http://localhost/School%20managment/logo.html" target="_blank">Logo</a></li>
+    			<li><a href="http://localhost/School%20managment/logo.html" target="_blank">About campus</a></li>
+   				</ul>
+  	</li>
+  	<li> <a>Facilities</a>
+    		<ul >
+    			<li><a href="http://localhost/School%20managment/logo.html" target="_blank">Central field</a></li>
+    			<li><a href="http://localhost/School%20managment/logo.html" target="_blank">Central library</a></li>
+    			<li><a href="http://localhost/School%20managment/logo.html" target="_blank">Medical center</a></li>   	
+  			</ul>
+  	</li>
+
+  	<li> <a>Events</a>
+    		<ul >
+    			<li><a href="http://localhost/School%20managment/logo.html" target="_blank">Study tour</a></li>
+    			<li><a href="http://localhost/School%20managment/logo.html" target="_blank">Sports</a></li>
+    			<li><a href="http://localhost/School%20managment/logo.html" target="_blank">Magazine</a></li>
+   				
+  			</ul>
+  	</li>
+
+  	<li> <a>Admission</a>
+    		<ul>
+    			<li><a href="http://localhost/School%20managment/logo.html" target="_blank">How to apply</a></li>
+    			<li><a href="http://localhost/School%20managment/logo.html" target="_blank">Result</a></li>
+    		</ul>
+      </li>
+  	<li><a href="http://localhost/School%20managment/contacts.html" target="_blank">Contact us</a></li>
+  </ul>
+<div class="login">
+  <h3>Login</h3>
+<form id="login" method="post" action="login.php">
+  <table id="logintab">
+  
+   <tr>
+    <td>
+      Username:
+    </td>
+    <br>
+    <td><input type="text" name="username" class="inputText" placeholder="Username" action="<?php echo 'username'; ?>"></td>
+   </tr>
+
+   <tr>
+    <td>
+      Password:
+    </td>
+    <br>
+    <td><input type="Password" name="password" class="inputText" placeholder="Password"></td>
+   </tr>
+
+   <tr>
+    <td>
+      
+    </td>
+    <td><input type="submit" name="loginbtn" value="Login" onclick="Login()"></td>
+   </tr>
+  </table>
+    <a href="#">Forget Password?</a> 
+    <a href="http://localhost/School%20managment/register.php" target="_blank">Register Now</a> 
+  </form>
+</div>
+<div class="info" >
+  <h2></h2>
+<img src="baf.jpg" height="300" width="600">
+<p>
+  The Government Laboratory High School (Govt. Lab.) is a school located in Dhanmondi, Dhaka, Bangladesh. The school was established on 3 September 1961.<br><br>
+  History:  
+  The principal of the adjacent Teacher's Training College, Muhammad Osman Gani, sought to establish a facility to assist his trainees practice teaching. From this idea, Government Laboratory High School was created. The school was inaugurated in 1961 by the then Director of the Department of Public Instruction (D.P.I), Muhammad Shamsul Haque. The first headmaster was Khan Muhammad Salek, who went on to serve for 12 years. Below is a list of the first teachers at the school, upon its opening....<br>
+
+  Khan Muhammad Salek (Headmaster)<br>
+  A. B. Mofizuddin Ahmed (Assistant Headmaster)<br>
+  Sirazul Haq Khan<br>
+  Muhammad Zafar Ali<br>
+  Abdur Rashid<br>
+  Muhammad Zahirul Huq<br>
+  Muhammad Nurul Islam<br>
+  A. B. M. Nurul Islam<br>
+  Muksedur Rahman Hawladar<br>
+  Muhammad Sharifuddin<br>
+  Khabir Uddin Ahmed<br>
+  Muhammad Waliullah<br>
+  Muhammad Sadat Ali<br>
+  Sri Suranjan Dutta<br>
+</p>
+
+
+</div>
+
+
+<div class="notice">
+  <h3>Notice</h3>
+  <ol type="i">
+    <li><a href ="http://localhost/School%20managment/logo.html" target ="showframe">A Discussion meetings will be held on 07th March,2018 at SWC</a><br> </li>
+    <li><a href ="http://localhost/School%20managment/logo.html" target ="showframe">Notice Regarding Annual Sports 2017</a><br></li>
+      <li><a href ="http://localhost/School%20managment/logo.html" target ="showframe">Summer vacation</a><br></li>
+      <li><a href ="http://localhost/School%20managment/logo.html" target ="showframe">Routine changed in class 5</a><br></li>
+      <li><a href ="http://localhost/School%20managment/logo.html" target ="showframe">Exam routine</a><br></li>
+
+
+
+  </ol>
+
+</div>
+<div class="result">
+  <h3>Result</h3>
+<ol type="i">
+  
+      <li ><a href ="http://localhost/School%20managment/logo.html" target ="showframe">Result of class 1</a><br> </li>
+    <li><a href ="http://localhost/School%20managment/logo.html" target ="showframe">Result of class 2</a><br></li>
+      <li><a href ="http://localhost/School%20managment/logo.html" target ="showframe">Result of class 3</a><br></li>
+      <li><a href ="http://localhost/School%20managment/logo.html" target ="showframe">Result of class 4</a><br></li>
+      <li><a href ="http://localhost/School%20managment/logo.html" target ="showframe">Result of class 5</a><br></li>
+      <li><a href ="http://localhost/School%20managment/logo.html" target ="showframe">Result of class 6</a><br></li>
+      <li><a href ="http://localhost/School%20managment/logo.html" target ="showframe">Result of class 7</a><br></li>
+      <li><a href ="http://localhost/School%20managment/logo.html" target ="showframe">Result of class 8</a><br></li>
+      <li><a href ="http://localhost/School%20managment/logo.html" target ="showframe">Result of class 9</a><br></li>
+      <li><a href ="http://localhost/School%20managment/logo.html" target ="showframe">Result of class 10</a><br></li>
+  </ol>
+  
+</div>
+<div class="link">
+  <h3>Important links</h3>
+<ol type="i">
+  
+      <li ><a href ="http://www.educationboard.gov.bd/" target ="showframe">Education Board</a><br> </li>
+    <li><a href ="https://www.rokomari.com/book" target ="showframe">Rokomari.com</a><br></li>
+      <li><a href ="http://www.moedu.gov.bd/" target ="showframe">Ministry of education</a><br></li>
+      
+  </ol>
+
+
+<?php
+  
+
+ if(empty($_POST['username']))
+    {
+        $this->HandleError("UserName is empty!");
+        return false;
+    }
+     
+    if(empty($_POST['password']))
+    {
+        $this->HandleError("Password is empty!");
+       return false;
+    }
+    
+    $username = trim($_POST['username']);
+    $password = trim($_POST['password']);
+     
+    if(!$this->CheckLoginInDB($username,$password))
+    {
+        return false;
+    }
+     
+    session_start();
+     
+    $_SESSION[$this->GetLoginSessionVar()] = $username;
+?>
+
+  
+</body>
+</html>

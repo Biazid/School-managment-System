@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+}
+.d{
+	background: #00fff0;
+	height: 101px;
+	padding-top: 15px;
+}
+
+.login {
+	left: 0%;
+	position: absolute;
+	top:50%;
+}
+
+.info {
+	top: 36%;
+	left: 30%;
+	position: absolute;
+	width: 500px;
+}
+.notice {
+	top:30%;
+	left:80%;
+	position: absolute;
+
+}
+.result{
+	left: 85%;
+	position: absolute;
+	top: 75%;
+}
+.link{
+	left: 3%;
+	position: absolute;
+	top: 25%;
+}
